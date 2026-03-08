@@ -1,0 +1,116 @@
+/* Editorial Submit Styles */
+
+.ed-submit {
+    min-height: 100vh;
+    color: var(--text-parchment);
+}
+
+.ed-submit-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+}
+
+.submit-title {
+    font-size: clamp(3.5rem, 6vw, 5rem);
+    line-height: 1.1;
+    color: var(--text-parchment);
+}
+
+/* Form Overrides for dark background */
+.ed-form .form-label {
+    color: var(--text-parchment);
+    font-size: 1.1rem;
+}
+
+.ed-form .label-helper {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+    font-family: var(--font-editorial);
+    font-style: italic;
+}
+
+.ed-form .form-control {
+    border-bottom-color: rgba(244, 240, 234, 0.2);
+    color: var(--text-parchment);
+}
+
+.ed-form .form-control:focus {
+    background: rgba(244, 240, 234, 0.05);
+    /* Slight highlight */
+    border-bottom-color: var(--accent-ultramarine);
+}
+
+.ed-form .form-control::placeholder {
+    color: rgba(107, 106, 101, 0.5);
+    /* Muted placeholder */
+}
+
+.ed-form .textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.ed-form .border-top {
+    border-top: 1px solid rgba(244, 240, 234, 0.2);
+}
+
+/* Success State */
+.success-title {
+    font-size: 4rem;
+    color: var(--accent-ultramarine);
+}
+
+/* Utilities */
+.tracking-widest {
+    letter-spacing: 0.1em;
+}
+
+.pt-8 {
+    padding-top: 2rem;
+}
+
+.pt-24 {
+    padding-top: 6rem;
+}
+
+@media (max-width: 992px) {
+    .ed-submit-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .submit-context {
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid rgba(244, 240, 234, 0.2);
+    }
+
+    .submit-form-wrapper {
+        padding-top: 0;
+    }
+
+    .ed-form.pt-24,
+    .success-state.pt-24 {
+        padding-top: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .submit-title {
+        font-size: 3rem;
+    }
+
+    .form-actions {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+
+    .success-title {
+        font-size: 3rem;
+    }
+}

@@ -1,0 +1,223 @@
+/* Editorial About / Manifesto Styles */
+
+.manifesto-header {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+
+.label-accent {
+    display: block;
+    font-family: var(--font-sans);
+    font-weight: 800;
+    color: var(--accent-ultramarine);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.85rem;
+    margin-bottom: 2rem;
+}
+
+.manifesto-title {
+    font-size: clamp(3rem, 7vw, 6rem);
+    color: var(--text-ink);
+}
+
+.manifesto-title .italic {
+    font-style: italic;
+    font-weight: 400;
+    /* Contrast against the bold serif */
+}
+
+/* Body */
+.manifesto-lead {
+    font-size: 2.25rem;
+    line-height: 1.3;
+    padding-right: 2rem;
+    color: var(--text-ink);
+}
+
+.manifesto-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+}
+
+.founder-signoff {
+    font-family: var(--font-sans);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.block {
+    display: block;
+}
+
+.text-sm {
+    font-size: 0.75rem;
+}
+
+.text-lg {
+    font-size: 1.1rem;
+    color: var(--text-ink);
+}
+
+.pt-4 {
+    padding-top: 1rem;
+}
+
+.pb-4 {
+    padding-bottom: 1rem;
+}
+
+.pb-6 {
+    padding-bottom: 1.5rem;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.mb-12 {
+    margin-bottom: 4rem;
+}
+
+/* Why Section */
+.ed-why {
+    padding: 6rem 0;
+    color: var(--text-parchment);
+}
+
+.why-lead {
+    font-size: 2.25rem;
+    line-height: 1.3;
+    padding-right: 2rem;
+}
+
+/* Mission Statement */
+.mission-statement {
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
+    line-height: 1.5;
+    color: var(--text-ink);
+    border-left: 4px solid var(--accent-ultramarine);
+    padding-left: 2rem;
+    font-style: italic;
+    max-width: 800px;
+}
+
+/* How It Works Model */
+.model-steps {
+    display: flex;
+    flex-direction: column;
+}
+
+.model-step {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.step-num {
+    font-family: var(--font-sans);
+    font-weight: 800;
+    font-size: 1rem;
+    padding-top: 0.4rem;
+}
+
+.step-title {
+    font-size: 2rem;
+    color: var(--text-ink);
+}
+
+/* Collaborators */
+.ed-collaborators {
+    padding: 6rem 0;
+    background-color: var(--bg-bone);
+}
+
+.collaborators-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+}
+
+.collab-role {
+    font-family: var(--font-sans);
+}
+
+.collab-name {
+    font-size: 1.75rem;
+    color: var(--text-ink);
+}
+
+.tracking-widest {
+    letter-spacing: 0.1em;
+}
+
+.py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.mt-3 {
+    margin-top: 0.75rem;
+}
+
+.mt-10 {
+    margin-top: 2.5rem;
+}
+
+/* Legacy board styles kept for reference but no longer used */
+.ed-board {
+    color: var(--text-parchment);
+}
+
+.board-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    row-gap: 5rem;
+}
+
+@media (max-width: 992px) {
+    .manifesto-lead {
+        padding-right: 0;
+        font-size: 1.75rem;
+    }
+
+    .why-lead {
+        padding-right: 0;
+        font-size: 1.75rem;
+    }
+
+    .collaborators-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .hidden-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .manifesto-header {
+        padding-top: 3rem;
+    }
+
+    .manifesto-title {
+        font-size: 2.5rem;
+    }
+
+    .model-step {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    .step-num {
+        padding-top: 0;
+    }
+
+    .mission-statement {
+        font-size: 1.2rem;
+    }
+}

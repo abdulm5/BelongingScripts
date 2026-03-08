@@ -1,0 +1,172 @@
+/* Guides Index Page Styles */
+
+.ed-resources {
+    min-height: 80vh;
+}
+
+.resources-header {
+    margin-top: 2rem;
+}
+
+.index-title {
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    line-height: 1.05;
+}
+
+/* Guides List */
+.guides-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.guide-row {
+    display: grid;
+    grid-template-columns: 200px 1fr 160px;
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem 0;
+    transition: background-color 0.2s ease;
+}
+
+.guide-row:hover {
+    background-color: var(--bg-bone);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+.guide-badge-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.guide-category {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.guide-title {
+    font-size: clamp(1.3rem, 2.5vw, 1.9rem);
+    line-height: 1.2;
+    color: var(--text-ink);
+}
+
+.guide-subtitle {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.guide-action {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.guide-link-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-sans);
+    font-weight: 800;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent-ultramarine);
+    text-decoration: none;
+    transition: gap 0.2s ease;
+}
+
+.guide-link-btn:hover {
+    gap: 0.75rem;
+}
+
+/* Print note */
+.print-note {
+    font-family: var(--font-sans);
+}
+
+/* Utilities */
+.border-bottom-thin {
+    border-bottom: 1px solid rgba(13, 12, 12, 0.12);
+}
+
+.border-top-thin {
+    border-top: 1px solid rgba(13, 12, 12, 0.12);
+}
+
+.mt-2 {
+    margin-top: 0.5rem;
+}
+
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.mt-12 {
+    margin-top: 3rem;
+}
+
+.mt-16 {
+    margin-top: 4rem;
+}
+
+.pb-12 {
+    padding-bottom: 3rem;
+}
+
+.pt-8 {
+    padding-top: 2rem;
+}
+
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+
+.max-w-lg {
+    max-width: 600px;
+}
+
+.text-lg {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.text-sm {
+    font-size: 0.85rem;
+}
+
+@media (max-width: 992px) {
+    .guide-row {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+        padding: 1.5rem 0;
+    }
+
+    .guide-row:hover {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .guide-badge-col {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .guide-action {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .index-title {
+        font-size: 2.5rem;
+    }
+}

@@ -1,0 +1,111 @@
+/* Editorial Footer */
+.editorial-footer {
+    margin-top: 8rem;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    color: var(--text-parchment);
+}
+
+.editorial-footer.bg-ink {
+    /* Override default bg-ink if needed for borders */
+    border-top: 8px solid var(--accent-ultramarine);
+}
+
+/* Adjust layout spaces */
+.editorial-footer .border-bottom {
+    border-bottom: 1px solid rgba(244, 240, 234, 0.2);
+    padding-bottom: 6rem;
+    margin-bottom: 2rem;
+}
+
+.footer-manifesto {
+    max-width: 500px;
+}
+
+.footer-title {
+    font-size: 3.5rem;
+    text-transform: none;
+}
+
+.footer-desc {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.footer-heading {
+    font-family: var(--font-sans);
+    font-weight: 800;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.footer-links a {
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    color: var(--text-parchment);
+    display: inline-block;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: var(--accent-ultramarine);
+    transform: translateX(5px);
+}
+
+.footer-bottom {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-brandcaps {
+    display: flex;
+    gap: 2rem;
+    font-weight: 800;
+}
+
+.mt-4 {
+    margin-top: 1.5rem;
+}
+
+@media (max-width: 992px) {
+    .editorial-footer {
+        padding-top: 4rem;
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .editorial-footer .footer-top {
+        gap: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .footer-title {
+        font-size: 2.5rem;
+    }
+
+    .footer-bottom.flex-between {
+        flex-direction: column-reverse;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+}

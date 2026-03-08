@@ -1,0 +1,285 @@
+/* Editorial Landing Styles */
+
+/* Hero */
+.ed-hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.ed-hero-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.hero-kicker {
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent-ultramarine);
+    margin-bottom: 2rem;
+}
+
+.hero-headline {
+    /* Dynamic font sizing is handled in index.css for h1 */
+    color: var(--text-ink);
+}
+
+.hero-subtext {
+    max-width: 500px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* Graphic visual - placeholder for brutalist texture or typography */
+.hero-visual {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.graphic-block {
+    width: 100%;
+    aspect-ratio: 3/4;
+    background-color: var(--bg-ink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.graphic-block::after {
+    content: '';
+    position: absolute;
+    top: 1rem;
+    left: -1rem;
+    width: 100%;
+    height: 100%;
+    border: var(--border-thick);
+    border-color: var(--accent-ultramarine);
+    z-index: -1;
+}
+
+.large-asterisk {
+    font-family: var(--font-editorial);
+    font-size: 20rem;
+    color: var(--bg-parchment);
+    line-height: 0;
+    padding-top: 5rem;
+    /* Optical alignment */
+}
+
+/* Impact Numbers */
+.ed-impact {
+    padding: 4rem 0;
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+}
+
+.impact-stat {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+.stat-divider {
+    border-left: 1px solid rgba(244, 240, 234, 0.2);
+}
+
+.stat-val {
+    font-size: 4.5rem;
+    line-height: 1;
+}
+
+.stat-label {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+}
+
+/* Framework / Pillars list */
+.ed-pillars {
+    overflow: hidden;
+}
+
+.pillar-index {
+    font-family: var(--font-sans);
+    font-weight: 800;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.pillar-list {
+    display: flex;
+    flex-direction: column;
+    border-bottom: var(--border-thin);
+}
+
+.pillar-row {
+    display: grid;
+    grid-template-columns: 50px 1.5fr 2fr 50px;
+    gap: 2rem;
+    padding: 3rem 0;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.pillar-row:hover {
+    background-color: var(--bg-bone);
+}
+
+.row-num {
+    font-family: var(--font-sans);
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.row-title {
+    font-size: 3rem;
+    color: var(--text-ink);
+}
+
+.row-desc {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+}
+
+.row-icon {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Quote Section */
+.quote-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+}
+
+.quote-content h3 {
+    line-height: 1.3;
+}
+
+/* Utilities */
+.mt-2 {
+    margin-top: 0.5rem;
+}
+
+.mt-6 {
+    margin-top: 1.5rem;
+}
+
+.mt-8 {
+    margin-top: 2rem;
+}
+
+.mt-12 {
+    margin-top: 4rem;
+}
+
+.text-left {
+    text-align: left;
+}
+
+/* CTA Strip */
+.ed-cta-strip {
+    padding: 5rem 0;
+}
+
+.cta-strip-inner {
+    gap: 2rem;
+}
+
+.mt-4-mobile {
+    margin-top: 0;
+}
+
+@media (max-width: 992px) {
+    .ed-hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .graphic-block {
+        display: none;
+        /* Hide visual block for text priority on small screens */
+    }
+
+    .hero-headline {
+        margin-bottom: 2rem;
+    }
+
+    .impact-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .stat-divider {
+        border-left: none;
+    }
+
+    .impact-stat:nth-child(even) {
+        border-left: 1px solid rgba(244, 240, 234, 0.2);
+    }
+
+    .pillar-row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 2rem 1rem;
+    }
+
+    .row-num {
+        display: none;
+    }
+
+    .quote-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .quote-space {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .ed-hero {
+        padding-top: 2rem;
+        min-height: 70vh;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .cta-strip-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .mt-4-mobile {
+        margin-top: 1rem;
+    }
+}

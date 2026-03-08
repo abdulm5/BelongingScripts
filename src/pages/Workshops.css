@@ -1,0 +1,206 @@
+/* Editorial Workshops Styles */
+
+.ed-workshops {
+    padding-bottom: 8rem;
+}
+
+.massive-title {
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    line-height: 1.1;
+    color: var(--text-ink);
+}
+
+.workshops-header {
+    margin-top: 4rem;
+}
+
+/* Workshop Cards */
+.workshop-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.workshop-card-grid {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.wc-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 0.5rem;
+}
+
+.wc-num {
+    font-family: var(--font-sans);
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+
+.wc-title {
+    font-size: clamp(1.6rem, 3vw, 2.5rem);
+    line-height: 1.2;
+    color: var(--text-ink);
+}
+
+.wc-desc {
+    line-height: 1.7;
+}
+
+.takeaway-label {
+    font-family: var(--font-sans);
+}
+
+.takeaway-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.takeaway-item {
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.takeaway-item::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--accent-ultramarine);
+    font-weight: 800;
+}
+
+.wc-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Contact CTA */
+.workshop-contact-cta {
+    padding-bottom: 2rem;
+}
+
+.cta-contact-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.mt-6-mobile {
+    margin-top: 0;
+}
+
+/* Badge */
+.sm-badge {
+    display: inline-block;
+    font-family: var(--font-sans);
+    font-weight: 800;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 0.25rem 0.75rem;
+    border: var(--border-thick);
+    color: var(--text-ink);
+    margin-bottom: 1rem;
+}
+
+.sm-badge.accent {
+    background: var(--text-ink);
+    color: var(--text-parchment);
+}
+
+.border-parchment {
+    border-color: var(--text-parchment);
+}
+
+.mb-16 {
+    margin-bottom: 4rem;
+}
+
+.pb-14 {
+    padding-bottom: 3.5rem;
+}
+
+.mb-14 {
+    margin-bottom: 3.5rem;
+}
+
+/* Utility Helpers */
+.pt-24 {
+    padding-top: 6rem;
+}
+
+.pb-4 {
+    padding-bottom: 1rem;
+}
+
+.pb-8 {
+    padding-bottom: 2rem;
+}
+
+.pb-12 {
+    padding-bottom: 3rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.mb-12 {
+    margin-bottom: 3rem;
+}
+
+.mt-16 {
+    margin-top: 4rem;
+}
+
+.p-12 {
+    padding: 4rem;
+}
+
+.max-w-lg {
+    max-width: 600px;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 992px) {
+    .workshop-card-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .wc-meta {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .cta-contact-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .mt-6-mobile {
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .massive-title {
+        font-size: 2.75rem;
+    }
+}
