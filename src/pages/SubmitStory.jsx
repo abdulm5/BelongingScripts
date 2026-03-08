@@ -81,7 +81,7 @@ const ShareStory = () => {
                             <div className="form-group mt-12">
                                 <label className="form-label" htmlFor="experience">
                                     II. What Happened
-                                    <span className="label-helper block mt-1">(Describe the moment — what was said, what you felt, what was confusing or difficult.)</span>
+                                    <span className="label-helper block mt-1">(Describe the moment, what was said, what you felt, what was confusing or difficult.)</span>
                                 </label>
                                 <textarea
                                     id="experience"
@@ -98,7 +98,7 @@ const ShareStory = () => {
                             <div className="form-group mt-12">
                                 <label className="form-label" htmlFor="identity">
                                     III. Your Context (Optional)
-                                    <span className="label-helper block mt-1">(First-gen, multilingual, major, year — helps us understand the pattern better.)</span>
+                                    <span className="label-helper block mt-1">(First-gen, multilingual, major, year, helps us understand the pattern better.)</span>
                                 </label>
                                 <input
                                     type="text"

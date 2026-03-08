@@ -23,7 +23,7 @@ const Workshops = () => {
             num: '01',
             title: 'Speaking Up in Class Without Overthinking It',
             duration: '45 min',
-            desc: 'Most students who stay quiet in class are not unprepared — they just do not know how to enter the conversation. This workshop covers practical strategies for joining discussions, using sentence starters, building on others\' points, and contributing even when you are not fully certain of your answer.',
+            desc: 'Most students who stay quiet in class are not unprepared, they just do not know how to enter the conversation. This workshop covers practical strategies for joining discussions, using sentence starters, building on others\' points, and contributing even when you are not fully certain of your answer.',
             takeaways: [
                 'Sentence starters for agreeing, questioning, and building on a point',
                 'Strategies for large lecture classes versus seminar discussions',
@@ -36,7 +36,7 @@ const Workshops = () => {
             num: '02',
             title: 'How to Use Office Hours Effectively',
             duration: '45 min',
-            desc: 'Many students avoid office hours because they are not sure what they are for, how to show up, or what to say when they get there. This workshop demystifies the whole thing — from introducing yourself to asking a question when you are behind.',
+            desc: 'Many students avoid office hours because they are not sure what they are for, how to show up, or what to say when they get there. This workshop demystifies the whole thing, from introducing yourself to asking a question when you are behind.',
             takeaways: [
                 'What office hours are actually for and who they are meant for',
                 'How to introduce yourself and state why you are there',
@@ -49,7 +49,7 @@ const Workshops = () => {
             num: '03',
             title: 'Academic Emails That Sound Clear and Professional',
             duration: '60 min',
-            desc: 'Academic email has an unofficial format that nobody teaches explicitly. This workshop walks through every element — subject lines, greetings, tone, amount of context, how to ask for things politely — with real examples for the situations students actually face.',
+            desc: 'Academic email has an unofficial format that nobody teaches explicitly. This workshop walks through every element, subject lines, greetings, tone, amount of context, how to ask for things politely, with real examples for the situations students actually face.',
             takeaways: [
                 'Subject line formats that work',
                 'Appropriate greetings and closings for different relationships',

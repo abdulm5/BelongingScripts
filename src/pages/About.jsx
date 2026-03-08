@@ -76,7 +76,7 @@ const About = () => {
                         </motion.p>
                         <motion.div variants={revealVariants}>
                             <p className="text-muted text-lg">
-                                Students are often judged on how confidently they speak, ask questions, write emails, and present themselves long before anyone evaluates what they actually know. The communication behaviors that signal competence, belonging, and readiness are rarely taught explicitly — they are assumed.
+                                Students are often judged on how confidently they speak, ask questions, write emails, and present themselves long before anyone evaluates what they actually know. The communication behaviors that signal competence, belonging, and readiness are rarely taught explicitly, they are assumed.
                             </p>
                             <p className="text-muted text-lg mt-6">
                                 By treating those moments as language issues rather than personal shortcomings, this project gives students clearer tools for navigating them.
@@ -161,15 +161,9 @@ const About = () => {
                         </motion.div>
 
                         <motion.div className="collab-card border-top py-8" variants={revealVariants}>
-                            <div className="collab-role text-muted text-sm uppercase tracking-widest mb-2">Faculty Advisor</div>
-                            <h3 className="font-serif collab-name">Position Open</h3>
-                            <p className="text-muted mt-3">A faculty member in linguistics, writing, or education who provides guidance on research methodology and campus outreach.</p>
-                        </motion.div>
-
-                        <motion.div className="collab-card border-top py-8" variants={revealVariants}>
                             <div className="collab-role text-muted text-sm uppercase tracking-widest mb-2">Campus Partner</div>
-                            <h3 className="font-serif collab-name">Writing Center / MLSO</h3>
-                            <p className="text-muted mt-3">Workshop co-sponsors and referral partners who help connect the initiative with students who would benefit most.</p>
+                            <h3 className="font-serif collab-name">Georgia State University</h3>
+                            <p className="text-muted mt-3">Home institution of the initiative. GSU's diverse, first-generation, and multilingual student population is exactly who this project is built for.</p>
                         </motion.div>
                     </motion.div>
                 </div>

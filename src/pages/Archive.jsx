@@ -31,13 +31,13 @@ const Reflections = () => {
         },
         {
             id: 3,
-            excerpt: "Networking events are a nightmare. There's a specific script for small talk — you're supposed to smoothly transition from weather to your major to asking for an internship. I end up freezing.",
+            excerpt: "Networking events are a nightmare. There's a specific script for small talk, you're supposed to smoothly transition from weather to your major to asking for an internship. I end up freezing.",
             tag: "Professional",
             size: "medium"
         },
         {
             id: 4,
-            excerpt: "As a first-generation student, learning the vocabulary of financial aid and scheduling was harder than my actual classes. 'Bursar', 'Provost', 'Prerequisite', 'Add/Drop' — it's a gatekeeping language.",
+            excerpt: "As a first-generation student, learning the vocabulary of financial aid and scheduling was harder than my actual classes. 'Bursar', 'Provost', 'Prerequisite', 'Add/Drop', it's a gatekeeping language.",
             tag: "Institutional",
             size: "medium"
         },
@@ -82,7 +82,7 @@ const Reflections = () => {
                             </blockquote>
 
                             <div className="testimony-footer mt-auto pt-6">
-                                <span className="t-anon">— Anonymous student</span>
+                                <span className="t-anon">Anonymous student</span>
                             </div>
                         </motion.div>
                     ))}
@@ -90,7 +90,7 @@ const Reflections = () => {
                     <motion.div className="testimony-card submit-prompt bg-ink" variants={itemVariants}>
                         <h3 className="font-serif text-parchment mb-4">Your experience matters too.</h3>
                         <p className="text-muted mb-8">
-                            Have you had a moment where an unwritten communication rule made you feel out of place? Share it — your reflection helps us understand these experiences and build better resources.
+                            Have you had a moment where an unwritten communication rule made you feel out of place? Share it, your reflection helps us understand these experiences and build better resources.
                         </p>
                         <Link to="/share" className="btn btn-solid border-parchment text-parchment w-full">Share Your Story</Link>
                     </motion.div>
