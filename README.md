@@ -1,16 +1,25 @@
-# React + Vite
+# Belonging Scripts (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This app uses React + Vite for the frontend and Vercel Functions for server-side geolocation logging.
 
-Currently, two official plugins are available:
+## Local development
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+npm install
+npm run dev
+```
 
-## React Compiler
+## Geolocation logging setup (Vercel)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Create a Vercel Postgres database and connect it to this project.
+2. Run the SQL migration in [`sql/001_create_visit_events.sql`](sql/001_create_visit_events.sql).
+3. Configure environment variables:
+   - `VISITOR_HASH_SALT` (required)
+   - `VISIT_RETENTION_DAYS` (optional, defaults to `30`)
+4. Deploy to Vercel. Geo headers are only populated on deployed requests.
 
-## Expanding the ESLint configuration
+### API endpoints
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `GET /api/where`: returns request geolocation payload.
+- `POST /api/visit`: stores one anonymous visit event.
+- `GET /api/cron/prune-visits`: cron target for retention cleanup.

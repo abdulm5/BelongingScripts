@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Analytics } from '@vercel/analytics/react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import VisitLogger from './components/VisitLogger';
 import Landing from './pages/Landing';
 import About from './pages/About';
 import Workshops from './pages/Workshops';
@@ -13,6 +14,7 @@ import ShareStory from './pages/SubmitStory';
 function App() {
   return (
     <Router>
+      <VisitLogger />
       <div className="app-container">
         <div className="bg-blobs">
           <div className="blob-1"></div>
