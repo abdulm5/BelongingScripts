@@ -1,9 +1,48 @@
-/* Editorial Navbar */
-.editorial-navbar {
+/* Site header: banner + nav stick together */
+.site-header {
     position: sticky;
     top: 0;
-    background: var(--bg-parchment);
     z-index: 1000;
+    background: var(--bg-parchment);
+}
+
+.partner-banner {
+    background: var(--accent-ultramarine);
+    color: var(--bg-parchment);
+    border-bottom: var(--border-thick);
+    border-color: rgba(13, 12, 12, 0.15);
+}
+
+.partner-banner-inner {
+    padding: 0.55rem 1rem;
+    text-align: center;
+}
+
+.partner-banner-text {
+    margin: 0;
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    line-height: 1.4;
+}
+
+.partner-banner-text a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    font-weight: 800;
+}
+
+.partner-banner-text a:hover {
+    opacity: 0.92;
+}
+
+/* Editorial Navbar */
+.editorial-navbar {
+    position: relative;
+    background: var(--bg-parchment);
     border-bottom: var(--border-thick);
 }
 

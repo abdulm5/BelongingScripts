@@ -94,11 +94,13 @@ const Landing = () => {
                 <div className="container">
                     <div className="impact-grid">
                         <div className="impact-stat">
-                            <span className="stat-val font-serif text-accent">30</span>
+                            <span className="stat-val font-serif text-accent">
+                                50<span className="stat-plus">+</span>
+                            </span>
                             <span className="stat-label">Students<br />Reached</span>
                         </div>
                         <div className="impact-stat stat-divider">
-                            <span className="stat-val font-serif text-parchment">02</span>
+                            <span className="stat-val font-serif text-parchment">03</span>
                             <span className="stat-label">Workshops<br />Hosted</span>
                         </div>
                         <div className="impact-stat stat-divider">
