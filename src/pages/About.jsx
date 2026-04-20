@@ -163,7 +163,19 @@ const About = () => {
                         <motion.div className="collab-card border-top py-8" variants={revealVariants}>
                             <div className="collab-role text-muted text-sm uppercase tracking-widest mb-2">Campus Partner</div>
                             <h3 className="font-serif collab-name">Georgia State University</h3>
-                            <p className="text-muted mt-3">Home institution of the initiative. GSU's diverse, first-generation, and multilingual student population is exactly who this project is built for.</p>
+                            <p className="text-muted mt-3">Home institution of the initiative. GSU's diverse, first-generation, and multilingual student population is exactly who this project is built for. Together with Georgia Tech, the initiative has reached over 100 student participants.</p>
+                        </motion.div>
+
+                        <motion.div className="collab-card border-top py-8" variants={revealVariants}>
+                            <div className="collab-role text-muted text-sm uppercase tracking-widest mb-2">Campus Partner</div>
+                            <h3 className="font-serif collab-name">Georgia Tech</h3>
+                            <p className="text-muted mt-3">The initiative's second campus partner, bringing the program to Georgia Tech's multilingual and international student community and broadening the reach of workshops and guides across Atlanta.</p>
+                        </motion.div>
+
+                        <motion.div className="collab-card border-top py-8" variants={revealVariants}>
+                            <div className="collab-role text-muted text-sm uppercase tracking-widest mb-2">Global Partner</div>
+                            <h3 className="font-serif collab-name">ChildFund International</h3>
+                            <p className="text-muted mt-3">A partnership with ChildFund International is expanding the Belonging Scripts corpus to English learners globally, extending the project's resources beyond U.S. campuses to underserved communities worldwide.</p>
                         </motion.div>
                     </motion.div>
                 </div>

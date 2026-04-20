@@ -43,7 +43,7 @@ const Landing = () => {
         {
             num: '04',
             title: 'Campus Partnerships',
-            desc: 'Works with writing centers, multilingual student offices, and student success programs to reach students who need it most.'
+            desc: 'Active across Georgia State University and Georgia Tech, and expanding globally through a partnership with ChildFund International to reach English learners worldwide.'
         },
     ];
 
@@ -95,7 +95,7 @@ const Landing = () => {
                     <div className="impact-grid">
                         <div className="impact-stat">
                             <span className="stat-val font-serif text-accent">
-                                50<span className="stat-plus">+</span>
+                                100<span className="stat-plus">+</span>
                             </span>
                             <span className="stat-label">Students<br />Reached</span>
                         </div>

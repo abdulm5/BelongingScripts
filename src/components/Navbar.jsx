@@ -30,9 +30,9 @@ const Navbar = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            ChildFund
+                            ChildFund International
                         </a>
-                        {' '}to expand our reach.
+                        {' '}to expand our corpus to English learners globally.
                     </p>
                 </div>
             </div>
