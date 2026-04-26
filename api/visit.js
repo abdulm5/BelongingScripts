@@ -57,12 +57,10 @@ export default async function handler(request, response) {
 
     return response.status(202).json({ ok: true });
   } catch (error) {
+    console.error("[visit] Error:", error?.message ?? error);
     return response.status(500).json({
       error: "Failed to store visit event",
-      message:
-        env.NODE_ENV === "production"
-          ? "Internal Server Error"
-          : error.message,
+      message: error.message,
     });
   }
 }
