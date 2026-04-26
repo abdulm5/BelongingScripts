@@ -217,6 +217,14 @@
         padding-top: 0;
     }
 
+    .step-title {
+        font-size: 1.4rem;
+    }
+
+    .collab-name {
+        font-size: 1.3rem;
+    }
+
     .mission-statement {
         font-size: 1.2rem;
     }

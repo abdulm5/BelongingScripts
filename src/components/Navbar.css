@@ -228,4 +228,8 @@
     .nav-border {
         border-bottom: var(--border-thick);
     }
+
+    .mobile-menu.open {
+        overflow-y: auto;
+    }
 }

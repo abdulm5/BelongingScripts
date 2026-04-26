@@ -289,3 +289,21 @@
         margin-top: 1rem;
     }
 }
+
+@media (max-width: 480px) {
+    .ed-hero {
+        min-height: auto;
+    }
+
+    .impact-stat {
+        padding: 0 1rem;
+    }
+
+    .stat-val {
+        font-size: 2.75rem;
+    }
+
+    .row-title {
+        font-size: 1.75rem;
+    }
+}
