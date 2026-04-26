@@ -11,9 +11,9 @@
     "test": "node --test"
   },
   "dependencies": {
-    "@vercel/functions": "^3.4.3",
+    "@neondatabase/serverless": "^1.1.0",
     "@vercel/analytics": "^2.0.1",
-    "@vercel/postgres": "^0.10.0",
+    "@vercel/functions": "^3.4.3",
     "framer-motion": "^12.35.0",
     "lucide-react": "^0.577.0",
     "react": "^19.2.0",

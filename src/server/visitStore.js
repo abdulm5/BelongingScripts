@@ -1,4 +1,12 @@
-import { sql } from "@vercel/postgres";
+import { neon } from "@neondatabase/serverless";
+
+function getClient() {
+  const url = process.env.DATABASE_URL || process.env.POSTGRES_URL;
+  if (!url) {
+    throw new Error("No database connection string found. Set DATABASE_URL or POSTGRES_URL.");
+  }
+  return neon(url);
+}
 
 export async function insertVisitEvent({
   route,
@@ -11,6 +19,7 @@ export async function insertVisitEvent({
   ipHash,
   userAgentHash,
 }) {
+  const sql = getClient();
   await sql`
     INSERT INTO visit_events (
       route,
@@ -40,8 +49,11 @@ export async function pruneExpiredVisits(retentionDays = 30) {
   const parsedDays = Number.isFinite(retentionDays)
     ? Math.max(1, Math.floor(retentionDays))
     : 30;
-  const intervalLiteral = `${parsedDays} days`;
 
+  const sql = neon(process.env.DATABASE_URL || process.env.POSTGRES_URL, {
+    fullResults: true,
+  });
+  const intervalLiteral = `${parsedDays} days`;
   const result = await sql`
     DELETE FROM visit_events
     WHERE occurred_at < NOW() - ${intervalLiteral}::interval
